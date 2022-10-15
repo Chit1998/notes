@@ -56,7 +56,6 @@ public class CreateNotesActivity extends AppCompatActivity {
             eTitle.setText(title);
             eNotes.setText(content);
             fabSave.setOnClickListener(v -> {
-
                 String title = eTitle.getText().toString();
                 String content = eNotes.getText().toString();
                 Constraint.setToast(v.getContext(),"Update");

@@ -21,3 +21,5 @@ FaceDetectionActivity.java
 activity_face_detection.xml
 activity_face_tracker.xml
 google-services.json
+keystore.jks
+app-release.apk
