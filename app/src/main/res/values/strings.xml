@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Notes</string>
+    <string name="personal_notepad">Personal Notepad</string>
+    <string name="email_address">Email Address</string>
+    <string name="pass">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="dont_have_an_account">Don\'t have an account ?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="already_have_an_account">Already have an account ?</string>
+    <string name="full_name">Full Name</string>
+    <string name="mail_sent">Mail sent !</string>
+    <string name="forgot_pass">Forgot Password</string>
+    <string name="go_back">Go back</string>
+    <string name="title">Title here...</string>
+    <string name="text">Write note here...</string>
+
+    <string name="ok">OK</string>
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
+</resources>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".auth.SignUpActivity">
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/purple_700"
+        android:layout_marginBottom="70dp"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/eFullName"/>
+
+    <EditText
+        android:id="@+id/eFullName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/full_name"
+        android:padding="14dp"
+        android:textColorHint="@color/edit_hint"
+        android:textColor="@color/black"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:autofillHints="name"
+        android:inputType="textPersonName"
+        android:background="@drawable/edit_drawable_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt"
+        app:layout_constraintBottom_toTopOf="@id/eEmail"/>
+
+
+    <EditText
+        android:id="@+id/eEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/email_address"
+        android:padding="14dp"
+        android:textColorHint="@color/edit_hint"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:autofillHints="emailAddress"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/edit_drawable_layout"
+        app:layout_constraintStart_toStartOf="@id/eFullName"
+        app:layout_constraintEnd_toEndOf="@id/eFullName"
+        app:layout_constraintTop_toBottomOf="@id/eFullName"
+        app:layout_constraintBottom_toTopOf="@id/ePass"/>
+
+    <EditText
+        android:id="@+id/ePass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/pass"
+        android:padding="14dp"
+        android:textColorHint="@color/edit_hint"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:autofillHints="password"
+        android:inputType="textPassword"
+        android:background="@drawable/edit_drawable_layout"
+        app:layout_constraintStart_toStartOf="@id/eFullName"
+        app:layout_constraintEnd_toEndOf="@id/eFullName"
+        app:layout_constraintTop_toBottomOf="@id/eEmail"
+        app:layout_constraintBottom_toTopOf="@id/btnSignUp"/>
+
+    <TextView
+        android:id="@+id/btnSignUp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/sign_up"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:background="@drawable/btn_drawable_layout"
+        android:padding="14dp"
+        app:layout_constraintStart_toStartOf="@id/eFullName"
+        app:layout_constraintEnd_toEndOf="@id/eFullName"
+        app:layout_constraintTop_toBottomOf="@id/ePass"
+        app:layout_constraintBottom_toTopOf="@id/txtSign"/>
+
+
+    <TextView
+        android:id="@+id/txtSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/already_have_an_account"
+        android:textColor="@color/black"
+        android:padding="8dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintStart_toStartOf="@id/eFullName"
+        app:layout_constraintEnd_toStartOf="@id/txtSignIn"
+        app:layout_constraintTop_toBottomOf="@id/btnSignUp"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/txtSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_in"
+        android:textColor="@color/purple_500"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingEnd="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintStart_toEndOf="@id/txtSign"
+        app:layout_constraintEnd_toEndOf="@id/eFullName"
+        app:layout_constraintTop_toTopOf="@id/txtSign"
+        app:layout_constraintBottom_toBottomOf="@id/txtSign"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
