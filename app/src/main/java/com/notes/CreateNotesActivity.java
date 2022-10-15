@@ -59,7 +59,6 @@ public class CreateNotesActivity extends AppCompatActivity {
 
                 String title = eTitle.getText().toString();
                 String content = eNotes.getText().toString();
-//a
                 Constraint.setToast(v.getContext(),"Update");
 
                 if (title.isEmpty() || content.isEmpty()){
